@@ -1,6 +1,5 @@
-# Moderated Learning Management System (LMS) - v1.0.0
+# Moderated Learning Management System (LMS) - 
 
-CS4433 Software Engineering - Final Project, Phase 4 (Implementation).
 A C++17 console application for a secondary school: courses, assignments, submissions, marking,
 **Head-of-Department moderation before release**, and a full audit log of mark changes.
 It works completely offline (embedded SQLite, no network).
@@ -67,9 +66,9 @@ src/security/      IPasswordHasher + SodiumPasswordHasher (Argon2id)
 src/service/       Use-case services, access control, audit (Observer), notifications (Observer)
 src/presentation/  Console, role menus, Application loop
 src/System.*       Composition root (the only place concrete classes are wired together)
-schema/schema.sql  The Phase 3 SQL schema, unchanged
+schema/schema.sql  The SQL schema
 tests/             GoogleTest suite
-docs/              Implementation notes, coding standard
+docs/              coding standard
 ```
 Dependencies point downward only: presentation -> service -> domain, data interfaces; SQLite code is
 reachable only through the repository interfaces.
